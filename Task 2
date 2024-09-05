@@ -1,0 +1,10 @@
+#include <vector>
+
+std::vector<int> increaseVectorElements(const std::vector<int>& vec, int n) {
+    std::vector<int> result;
+    result.reserve(vec.size());
+    for (int element : vec) {
+        result.push_back(element + n);
+    }
+    return result;
+}
